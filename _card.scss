@@ -1,0 +1,68 @@
+.card {
+    background: $grey;
+    max-width: $width-card;
+    border-radius: $br-card;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.card__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.name {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 35px;
+letter-spacing: 0.36px;
+color: $blue;
+}
+
+.price {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid #D4D4D4;
+    ;
+}
+
+.new__price {
+    margin-right: 80px;
+    margin-left: 10px;
+}
+
+.old {
+    font-family: 'Roboto';  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    text-decoration-line: line-through;
+    color: #B8B8B8;
+}
+
+.new {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 32px;
+letter-spacing: 0.36px;
+color: $blue;
+}
+
+.old__price {
+    @extend .old;
+}
+
+.new__price {
+    @extend .new;
+}
